@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Zen Maru Gothic", serif;
+    background-color: #f8f7f1;
+    color: black;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    margin: 40px;
+}
+
+.left {
+    width: 15%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    height: 430px;
+}
+
+.profile h5 {
+    margin: 15px 0 5px 0;
+    padding: 0;
+}
+
+.profile p {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 12px;
+    color: gray;
+}
+
+#icon {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.writebtn {
+    margin: 0 auto;
+}
+
+.btn {
+    display: flex;
+    justify-content: center; /* ボタン内の画像とテキストがボタンの真ん中に*/
+    padding: 10px 0;
+    margin-top: 15px;
+    background-color: #C62521;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-indent: 1px;
+    border-radius: 10px;
+}
+
+.btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #c24845;
+}
+
+.medium {
+    width: 45%;
+    margin-left: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.medium h3 {
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.medium p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+    text-align: justify;
+    letter-spacing: 1px;
+    text-indent: 1px;
+    line-height: 180%;
+}
+
+.right {
+    width: 30%;
+    margin-left: 40px;
+}
+
+.content {
+    background-color: white;
+    border-radius: 5px;
+    text-align: left;
+    margin: 0 0 20px 0;
+    padding: 20px;
+    height: 200px;
+}
+
+.content h4 {
+    margin: 0 0 10px 0;
+}
+
+
+footer {
+    margin-top: 50px;
+    height: auto;
+}
+
+.profile hr {
+    width: 90%;
+}
+
+.copyright {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin: 20px 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Serif JP', serif;
+}

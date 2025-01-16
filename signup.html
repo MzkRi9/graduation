@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/hp/favicon.png">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Yusei+Magic&family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Noto+Serif+JP:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <title>はなやいば - ログイン</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img id="logo" src="./img/main/logo_black.png" style="height: 70px;">
+        </a>
+    </header>
+
+    <h4>新規会員登録</h4>
+    <form action="./php/insert.php" method="POST">    
+        <table>
+            <tr>
+                <td align="right" class="item">氏名</td>
+                <td align="left"><input type="text" name="name" ></td>
+            </tr>
+            <tr>
+                <td align="right" class="item">メールアドレス</td>
+                <td align="left"><input type="email" name="lid"></td>
+            </tr>
+            <tr>
+                <td align="right" class="item">パスワード</td>
+                <td align="left"><input type="password" name="lpw"></td>
+            </tr>
+            <tr>
+                <td align="right" class="item">携帯番号</td>
+                <td align="left"><input type="tel" name="tel"></td>
+            </tr>
+        </table>
+        <div>
+            <button type="submit" id="btn_signup" class="btn">登録</button>
+        </div>
+        <div>
+            <a href="./login.html" id="login" style="color: #666; font-size: 13px;">ログインページに戻る</a>
+        </div>
+    </form>
+
+</body>
+
+<footer>
+    <hr size="1">
+    <div class="copyright">
+        <p>© FlowersKnives, Inc. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</html>

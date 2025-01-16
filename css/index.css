@@ -1,0 +1,275 @@
+html {
+    scroll-behavior: smooth; /* 滑らかなスクロール */
+}
+
+/* ページ全体の共通設定 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Serif JP', serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+ul {
+    list-style: none; /* ulの点を消す */
+    padding-left: 0em; /* 中央寄せのために冒頭の余白を消す */
+}
+
+p, h5 {
+    font-size: small;
+    text-align: center;
+    letter-spacing: 1px;
+    text-indent: 1px;
+    line-height: 170%;
+}
+
+h2, h3, h4 {
+    text-align: center;
+    letter-spacing: 2px;
+    text-indent: 2px;
+}
+
+hr {
+    width: 70%;
+}
+
+/* ここからtop */
+/* 文字をtop画像の真ん中に設定 */
+#top {
+    display: grid;
+    align-items: center;
+    margin: 0;
+}
+
+.topimg, .logo {
+    grid-column: 1; /* gridの列を設定 */
+    grid-row: 1; /* gridの行を設定 */
+}
+
+/* スクロールしても文字がtopになったら固定にします */
+.logo {
+    position: sticky;
+    top: 0;
+}
+
+/* ここからnav */
+#nav {
+    margin: 50px auto;
+    font-size: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#nav li {
+    display: inline; /*横並び*/
+    margin-left: 40px; /*liの間の余白を80pxに*/
+    margin-right: 40px;
+}
+
+.navmenu {
+    color: white;
+    text-decoration: none; /*下線なし*/
+}
+
+.navmenu:hover {
+    color: #856245;
+}
+
+/* リード分 */
+#first {
+    margin: 80px 0;
+}
+
+/* 各章のtitle指定 */
+.title {
+    margin: 50px 0;
+}
+
+/* ここからmember */
+#member, #content, #id, #join {
+    margin: 100px 0;
+}
+
+.memberinfo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20%;
+    justify-content: space-between;
+}
+
+.memberinfo h5 {
+    margin: 15px 0 5px 0;
+    padding: 0;
+}
+
+.memberinfo p {
+    margin: 0 0 30px 0;
+    padding: 0;
+    font-size: 12px;
+    color: gray;
+}
+
+.member_icon {
+    height: 80px;
+    border-radius: 50%;
+}
+
+.member_icon:hover {
+    transform: scale(1.1,1.1);
+    transition-duration: 0.3s;
+}
+
+/* ここからpopup */
+.popup {
+    display: none;
+    position: fixed;
+    width: 40%;
+    height: 60%;
+    top: 20%;
+    left: 30%;
+    background-color: #F8F7F1;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.closePopup {
+    text-align: right;
+    margin: 25px;
+}
+
+.popupContent {
+    margin: 5% 8%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.popupContent img {
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 7px;
+}
+
+.profile {
+    text-align: left;
+}
+
+.profile h3 {
+    color: #333;
+    margin: 0;
+    text-align: left;
+}
+
+.profile h5 {
+    color: #777;
+    margin: 5px 0;
+    text-align: left;
+    letter-spacing: 1px;
+    text-indent: 1px;
+}
+
+.profile hr {
+    margin: 0;
+    width: 100%;
+}
+
+.profile p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #333;
+    text-align: justify;
+    letter-spacing: 0.7px;
+}
+
+.knowmore {
+    display: inline-block;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 0;
+    width: 180px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-indent: 1px;
+}
+
+.knowmore:hover {
+    background-color: #666;
+}
+
+/* ここからサービス */
+.content {
+    display: flex; /* 画像と文章を横並びに */
+    margin: 0 13%;
+}
+
+.contentinfo {
+    width: 50%; /* 画像と文字どちらの大きさも50%で半々に */
+    display: flex; /* もう1回横並びを設定することで、画面が小さくなっても真ん中揃いのまま。なんで？レスポンシブの一部？ */
+    align-items: center; /* 左右の要素が水平方向で真ん中揃いに */
+}
+
+.contenttext {
+    padding: 40px;
+}
+
+.contentinfo p {
+    text-align: justify;
+}
+
+.contentimg {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.link {
+    font-size: 11px;
+    color: #aeaeae;
+    text-align: right;
+    padding-right: 2px
+}
+
+.readmore, .login, .entrybtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C62521;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+    width: 160px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-indent: 1px;
+}
+
+.readmore:hover {
+    background-color: #c24845;
+}
+
+.login:hover {
+    background-color: #c24845;
+}
+
+.entrybtn:hover {
+    background-color: #c24845;
+}
+
+footer {
+    background-color: #242424;
+    margin-top: 50px;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 10px;
+}

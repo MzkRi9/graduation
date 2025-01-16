@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Zen Maru Gothic", serif;
+    background-color: #F8F7F1;
+    color: #333;
+    text-align: center;
+}
+
+form {
+    margin: 50px 0;
+}
+
+header {
+    padding: 30px;
+}
+
+form p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-indent: 1px;
+    line-height: 2em;
+}
+
+table {
+    margin: 30px auto;
+    font-size: 12px;
+}
+
+.item {
+    padding: 15px 8px 15px 0;
+}
+
+input {
+    height: 30px;
+    color: #333;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    border-width : 0;
+    box-shadow: 1px 1px 3px 0 rgb(219, 219, 219);
+    padding-left: 10px;
+}
+
+.btn {
+    margin: 20px 0 20px 0;
+    width: 150px;
+    padding: 8px 0;
+    border-radius: 20px;
+    font-size: 12px;
+    border: none;
+    background-color: #c74838;
+    color: white;
+    font-family: "Zen Maru Gothic", serif;
+}
+
+#signup {
+    font-size: 12px;
+    color: #666;
+}
+
+footer {
+    margin-top: 50px;
+    height: auto;
+}
+
+hr {
+    width: 90%;
+}
+
+.copyright {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin: 20px 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Serif JP', serif;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/hp/favicon.png">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Yusei+Magic&family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Noto+Serif+JP:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <title>はなやいば - ログイン</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img id="logo" src="./img/main/logo_black.png" style="height: 70px;">
+        </a>
+    </header>
+
+    <form name="form" action="./php/login_act.php" method="post">
+        <p>ログインすると<br>ファミリーメンバーが発信した全てのコンテンツを閲覧でき<br>お手紙を送れます。</p>
+        <table>
+            <tr>
+                <td align="right" class="item">メールアドレス</td>
+                <td align="left"><input type="text" name="lid" ></td>
+            </tr>
+            <tr>
+                <td align="right" class="item">パスワード</td>
+                <td align="left"><input type="password" name="lpw"></td>
+            </tr>
+        </table>
+        <div>
+            <button type="submit" id="btn_login" class="btn">ログイン</button>
+        </div>
+        <div>
+            <a href="./signup.html" id="signup">新規入会の方はこちら</a>
+        </div>
+    </form>
+</body>
+
+<footer>
+    <hr size="1">
+    <div class="copyright">
+        <p>© FlowersKnives, Inc. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</html>
