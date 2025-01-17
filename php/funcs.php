@@ -7,10 +7,10 @@ function h($str){
 //DB接続関数：db_conn()
 function db_conn(){
     try {
-        $db_name = "flowersknives"; //デプロイ"flowersknives_member" 開発"flowersknives"
-        $db_id = "root"; //デプロイ"flowersknives_member" 開発"root"
-        $db_pw = ""; //XAMPPは空白、MAMPPはroot。デプロイの時は"member"に変更
-        $db_host = "localhost"; //デプロイ"mysql80.flowersknives.sakura.ne.jp" 開発"localhost"
+        $db_name = "flowersknives";
+        $db_id = "root";
+        $db_pw = "";
+        $db_host = "localhost";
         //$pdo = new PDO('mysql:dbname=flowersknives;charset=utf8;host=localhost','root','');
         return new PDO('mysql:dbname='.$db_name.';charset=utf8;host='.$db_host, $db_id, $db_pw);
     } catch (PDOException $e) {
